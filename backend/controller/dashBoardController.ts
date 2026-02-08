@@ -44,9 +44,10 @@ export const myPost = async (req: AuthRequest, res: Response) => {
 //create post logic
 export const createPost = async (req: AuthRequest, res: Response) => {
   try {
+    
     if (!req.user) return res.status(401).json({ msg: "Unauthorized" });
 
-    const { title, description, img_url } = req.body;
+    const {title, description, img_url } = req.body;
 
     if (!title) {
       return res.status(400).json({ msg: "Title is required" });

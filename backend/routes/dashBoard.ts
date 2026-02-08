@@ -12,8 +12,8 @@ const router=Router();
 
 router.get("/all-post",allPost)
 router.get("/my-post",myPost)
-router.get("/create-post",createPost)
-router.get("/like-post",likePost)
-router.get("/comment-post",commentPost)
+router.post("/create-post",createPost)
+router.post("/like-post/:postId", likePost);
+router.post("/comment-post/:postId", commentPost);
 
 export default router;
