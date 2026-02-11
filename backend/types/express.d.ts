@@ -6,3 +6,17 @@ export interface AuthRequest extends Request {
 }
 
 
+
+// can also do like this in here we also do not have to declare authrequest everywhere
+
+// import type { Request } from "express";
+
+// declare global{
+//   namespace express{
+//     interface Request{
+//       userid?:{
+//         id:number;
+//         email?:string
+//       };
+//     }
+//   }
