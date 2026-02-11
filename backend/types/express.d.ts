@@ -12,7 +12,7 @@ export interface AuthRequest extends Request {
 // import type { Request } from "express";
 
 // declare global{
-//   namespace express{
+//   namespace Express{
 //     interface Request{
 //       userid?:{
 //         id:number;
